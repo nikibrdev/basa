@@ -1,0 +1,85 @@
+.about {
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1.3;
+    text-align: center;
+
+    @include small-tablet {
+      font-size: 60px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    line-height: 1.3;
+    text-align: center;
+
+    @include small-tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    margin: 0 auto;
+    max-width: 618px;
+  }
+
+  &__img-wrap {
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-radius: 30px;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__text {
+    flex-basis: 294px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.3;
+
+    @include small-tablet {
+      flex-basis: 100%;
+    }
+  }
+
+  &__quote {
+    position: absolute;
+    left: 324px;
+    bottom: 0;
+    margin: 0;
+    width: 452px;
+
+    @include high-tablet {
+      width: 294px;
+    }
+
+    @include small-tablet {
+      position: static;
+    }
+  }
+
+  &__quote-text {
+    margin: 0;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  &__quote-author {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}

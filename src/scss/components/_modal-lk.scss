@@ -1,0 +1,113 @@
+.modal-lk {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__subs {
+    border-bottom: 1px solid #828282;
+    padding-bottom: 40px;
+  }
+
+  &__subs-inner {
+    border-radius: 30px;
+    padding: 30px 20px;
+    background-color: #ebe8ff;
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__rate-item {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 21px;
+    font-size: 14px;
+    color: #040404;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icons/check.svg");
+      transform: translateY(-50%);
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__price-value {
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(0deg, #7f42fa 0%, #9e83ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  &__price-units {
+    font-size: 14px;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(0deg, #7f42fa 0%, #9e83ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  &__subs-status {
+    font-size: 14px;
+    color: #4261fa;
+  }
+
+  &__time {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #828282;
+  }
+
+  &__subs-link {
+    display: block;
+    margin-left: auto;
+    padding: 5px 0;
+    max-width: 131px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #828282;
+
+    &:hover{
+    color: #f3f3f3;
+
+    }
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__action-link {
+    line-height: 1.3;
+    color: #f3f3f3;
+
+    &:hover{
+      color: var(--accent-color);
+    }
+  }
+}

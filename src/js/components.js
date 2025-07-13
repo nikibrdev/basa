@@ -1,0 +1,7 @@
+import './components/burger.js'
+import './components/player.js'
+import './components/modal-right.js'
+import './components/validaition-form.js'
+import './components/pasword-change.js'
+import './components/validaition-password.js'
+import './components/modal.js'

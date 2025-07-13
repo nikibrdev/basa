@@ -1,0 +1,55 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  overflow: hidden;
+  background: rgba(4, 4, 4, 0.8);
+  transition: background 0.3s ease;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 500px;
+    padding: 20px 0;
+    background-color: var(--accent-color);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    gap: 20px 33px;
+
+    @media (width <= 1830px) {
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+
+  }
+
+  &__text {
+    margin: 0;
+    margin-left: 93px;
+    font-size: 30px;
+    line-height: 1.3;
+
+    @media (width <= 1830px) {
+      margin-left: 0;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    @include small-tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: #040404;
+    background: #ebe8ff;
+
+    &:hover {
+      background: #B0B0B0;
+    }
+  }
+}
+

@@ -1,0 +1,129 @@
+<div class="modal-right graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-right">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <h5 class="modal-right__title">
+        Вход или регистрация
+      </h5>
+      <div class="modal-right__inner active" data-form-type="auth">
+        <!-- Основная форма -->
+        <form action="#" class="form" data-form="auth">
+          <!-- Блок регистрации -->
+          <div class="form-section" data-section="register">
+            <div class="form__field-wrapper">
+              <label class="form__label">
+                <input type="text" name="name" class="input-reset form__input" placeholder="Имя"
+                  data-validate="required">
+              </label>
+              <span class="form__error-message" data-error="name"></span>
+            </div>
+
+            <div class="form__field-wrapper">
+              <label class="form__label">
+                <input type="email" name="email" class="input-reset form__input" placeholder="E-mail"
+                  data-validate="required|email">
+              </label>
+              <span class="form__error-message" data-error="email"></span>
+            </div>
+
+            <div class="form__field-wrapper">
+              <label class="form-checkbox">
+                <input type="checkbox" class="form-checkbox__field" data-validate="required" name="agreement">
+                <span class="form-checkbox__content">
+                  <span class="form-checkbox__content-text">
+                    Настоящим я даю согласие на обработку персональных данных
+                  </span>
+                  <a class="form-checkbox__content-link" href="#">
+                    Политика обработки персональных данных
+                  </a>
+                </span>
+              </label>
+              <span class="form__error-message form__error-message--checkbox" data-error="agreement"></span>
+            </div>
+
+            <button class="btn-reset form__btn btn" type="submit">Зарегистрироваться</button>
+          </div>
+          <!-- Блок входа -->
+          <div class="form-section" data-section="login" style="display:none;">
+            <div class="form__field-wrapper">
+              <label class="form__label">
+                <input type="email" name="login-email" class="input-reset form__input" placeholder="E-mail"
+                  data-validate="required|email">
+              </label>
+              <span class="form__error-message" data-error="login-email"></span>
+            </div>
+
+            <div class="form__field-wrapper">
+              <label class="form__label">
+                <input type="password" name="password" class="input-reset form__input" placeholder="Пароль"
+                  data-validate="required">
+              </label>
+              <button type="button" class="btn-reset form__toggle" aria-label="Показать пароль">
+                <div class="form__icon-wrap">
+                  <img class="form__icon" src="img/icons/eye.svg" alt="">
+                </div>
+              </button>
+              <span class="form__error-message" data-error="password"></span>
+              <a class="form__link" href="#">Забыли пароль?</a>
+            </div>
+
+            <button class="btn-reset form__btn btn" type="submit">Войти</button>
+          </div>
+        </form>
+        <!-- Блок подтверждения отправки пароля -->
+        <div class="form__confirmation">
+          <p class="form__confirmation-text">
+            Пароль отправлен на почту<br>
+            <span class="form__user-email">example@example.com</span>
+          </p>
+          <div class="form__field-wrapper">
+            <label class="form__label">
+              <input type="password" id="passwordInput" class="input-reset form__input" placeholder="Пароль">
+            </label>
+            <button type="button" class="btn-reset form__toggle" aria-label="Показать пароль">
+              <div class="form__icon-wrap">
+                <img class="form__icon" src="img/icons/eye.svg" alt="">
+              </div>
+            </button>
+            <span class="form__error-message" id="passwordError"></span>
+          </div>
+          <button class="btn-reset form__btn btn form__confirmation-btn">Войти</button>
+        </div>
+        <!-- Блок успешной регистрации -->
+        <div class="form__success">
+          <svg class="form__success-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_50_3768)">
+              <path
+                d="M14.6663 7.38662V7.99995C14.6655 9.43756 14.2 10.8364 13.3392 11.9878C12.4785 13.1393 11.2685 13.9816 9.88991 14.3892C8.5113 14.7968 7.03785 14.7479 5.68932 14.2497C4.3408 13.7515 3.18944 12.8307 2.40698 11.6247C1.62452 10.4186 1.25287 8.99199 1.34746 7.55749C1.44205 6.12299 1.99781 4.7575 2.93186 3.66467C3.86591 2.57183 5.1282 1.81021 6.53047 1.49338C7.93274 1.17656 9.39985 1.32151 10.713 1.90662M14.6663 2.66662L7.99968 9.33995L5.99968 7.33995"
+                stroke="#040404" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M14.6663 7.38662V7.99995C14.6655 9.43756 14.2 10.8364 13.3392 11.9878C12.4785 13.1393 11.2685 13.9816 9.88991 14.3892C8.5113 14.7968 7.03785 14.7479 5.68932 14.2497C4.3408 13.7515 3.18944 12.8307 2.40698 11.6247C1.62452 10.4186 1.25287 8.99199 1.34746 7.55749C1.44205 6.12299 1.99781 4.7575 2.93186 3.66467C3.86591 2.57183 5.1282 1.81021 6.53047 1.49338C7.93274 1.17656 9.39985 1.32151 10.713 1.90662M14.6663 2.66662L7.99968 9.33995L5.99968 7.33995"
+                stroke="url(#paint0_linear_50_3768)" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_50_3768" x1="8.00777" y1="6.86406" x2="8.08494" y2="1.33054"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7F42FA" />
+                <stop offset="1" stop-color="#9E83FF" />
+              </linearGradient>
+              <clipPath id="clip0_50_3768">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="form__success-text">Регистрация прошла успешно</p>
+        </div>
+
+        <div class="modal-right__info">
+          <p class="modal-right__text" data-info-text>
+            Уже есть аккаунт?
+          </p>
+          <button class="btn-reset modal-right__btn" data-toggle-form>
+            Войти
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

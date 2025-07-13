@@ -1,0 +1,23 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Lato", sans-serif;
+  --content-width: 1600px;
+  --content-fluid-width: 1920px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+
+  // colors
+  --accent-color: #7f42fa;
+  --accent-hover-color: rgba(127, 66, 250, .8);
+  --bg-color: linear-gradient(0deg, #7f42fa 0%, #9e83ff 100%);
+  --border-bg-color: linear-gradient(0deg, #6621E7 0%, #9e83ff 100%);
+  --dark-color:  #040404;
+  --dark-color-hover:  rgba(4,4,4, .8);;
+  --light-color:  #ebe8ff;
+  --txt-color: #f3f3f3;
+  --transition-duration: 0.2s;
+}
+

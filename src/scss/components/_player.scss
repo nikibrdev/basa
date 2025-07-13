@@ -1,0 +1,143 @@
+.player {
+  @include high-desktop {
+    flex-basis: 48%;
+  }
+
+  &__img-wrap {
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 30px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 48px;
+    gap: 20px;
+  }
+
+  &__name-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__name-track {
+    margin: 0;
+  }
+
+  &__name-author {
+    color: #b0b0b0;
+  }
+
+  &__progress-container {
+    width: 349px;
+  }
+
+  &__time-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #b0b0b0;
+  }
+
+  &__progress-bar {
+    margin-bottom: 7px;
+    border-radius: 3px;
+    background-color: #b0b0b0;
+    cursor: pointer;
+  }
+
+  &__progress {
+    position: relative;
+    border-radius: 3px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent-color);
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -8px;
+      top: -6px;
+      border-radius: 100%;
+      width: 17px;
+      height: 17px;
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+  }
+
+  &__btn {
+    &--play {
+      position: relative;
+      margin: 0 28px;
+      border-radius: 100%;
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(0deg, #7f42fa 0%, #9e83ff 100%);
+
+      img {
+        position: absolute;
+        left: 14px;
+        top: 12px;
+      }
+    }
+
+    &:hover {
+      border-radius: 3px;
+      background-color: var(--accent-hover-color);
+    }
+  }
+
+  &__volume-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 328px;
+    gap: 10px;
+  }
+
+  &__volume-btn {
+    &:hover {
+      border-radius: 3px;
+      background-color: var(--accent-hover-color);
+    }
+  }
+
+  &__volume-bar {
+    border-radius: 2px;
+    width: 262px;
+    background-color: #b0b0b0;
+    cursor: pointer;
+  }
+
+  &__volume-progress {
+    height: 2px;
+    background-color: var(--accent-color);
+
+  }
+
+  &__volume-thumb {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: px;
+      top: -6px;
+      border-radius: 100%;
+      width: 10px;
+      height: 10px;
+      background-color: var(--accent-color);
+    }
+  }
+}

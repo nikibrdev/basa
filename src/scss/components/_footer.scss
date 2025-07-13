@@ -1,0 +1,27 @@
+.footer {
+  margin: 50px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__copy {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.42857;
+    gap: 10px;
+  }
+
+  &__copy-year {
+    &::before {
+      content: '©';
+      padding-right: 4px;
+    }
+
+    &::after {
+      content: ',';
+    }
+  }
+}

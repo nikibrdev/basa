@@ -1,0 +1,243 @@
+<section class="music section">
+  <div class="container">
+    <h2 class="music__subtitle">Музыка</h2>
+    <div class="music__header">
+      <h2 class="music__title">АЛЬБОМ</h2>
+      <h3 class="music__name">
+        <span class="music__name-text">Мелодия баса</span>
+      </h3>
+    </div>
+    <div class="music__inner">
+      <div class="player">
+        <div class="player__img-wrap">
+          <img class="player__img" src="img/player-img.jpg" alt="Обложка альбома" width="550" height="550">
+        </div>
+        <div class="player__content">
+          <div class="player__name-box">
+            <h4 class="player__name-track">Название трека</h4>
+            <span class="player__name-author">Мелодия баса</span>
+          </div>
+          <div class="player__progress-container">
+            <div class="player__time-info">
+              <span class="player__current-time" id="current-time">2:14</span>
+              <span class="player__duration" id="duration">
+                <span class="player__time-remaining">-1:15</span>
+              </span>
+            </div>
+            <div class="player__progress-bar" id="progress-bar">
+              <div class="player__progress" id="progress"></div>
+              <div class="player__progress-thumb" id="progress-thumb"></div>
+            </div>
+          </div>
+          <div class="player__btns">
+            <button class="player__btn player__btn--random btn-reset">
+              <img src="img/icons/btn-random.svg" class="player__btn-img" width="32" height="32">
+            </button>
+            <button class="player__btn player__btn--prev btn-reset" title="Предыдущий трек">
+              <img src="img/icons/btn-prev.svg" class="player__btn-img" width="32" height="32">
+            </button>
+            <button class="player__btn player__btn--play btn-reset" id="play-btn">
+              <img src="img/icons/play.svg" class="player__btn-img" width="40" height="40">
+            </button>
+            <button class="player__btn player__btn--next btn-reset" title="Следующий трек">
+              <img src="img/icons/btn-next.svg" class="player__btn-img" width="32" height="32">
+            </button>
+            <button class="player__btn player__btn--repeat btn-reset">
+              <img src="img/icons/btn-repeat.svg" class="player__btn-img" width="32" height="32">
+            </button>
+          </div>
+          <div class="player__volume-container">
+            <button class="player__volume-btn player__volume-btn--decrease btn-reset" title="Уменьшить громкость">
+              <img loading="lazy" src="img/icons/decrease.svg" width="24" height="24">
+            </button>
+            <div class="player__volume-bar" id="volume-bar">
+              <div class="player__volume-progress" id="volume-progress"></div>
+              <div class="player__volume-thumb" id="volume-thumb"></div>
+            </div>
+            <button class="player__volume-btn player__volume-btn--increase btn-reset" title="Увеличить громкость">
+              <img loading="lazy" src="img/icons/increase.svg" width="24" height="24">
+            </button>
+          </div>
+        </div>
+      </div>
+      <ol class="music__list list-reset">
+        <li class="music__list-item ">
+          <div class="track">
+            <div class="track__img-wrap">
+              <img class="track__img" src="img/track-img.jpg" width="80" height="80"
+                alt="Миниатюра обложки альбома Мелодия Баса">
+            </div>
+            <div class="track__content">
+              <h4 class="track__name">
+                Название трека
+              </h4>
+              <span class="track__author">
+                Мелодия баса
+              </span>
+            </div>
+            <a class="track__link" href="#">
+              <svg class="track__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12M16 6L12 2M12 2L8 6M12 2V15"
+                  stroke="#F3F3F3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="track__timer">0:00</div>
+          </div>
+        </li>
+        <li class="music__list-item">
+          <div class="track track--lock">
+            <div class="track__img-wrap">
+              <img class="track__img" src="img/track-img.jpg" width="80" height="80"
+                alt="Миниатюра обложки альбома Мелодия Баса">
+            </div>
+            <div class="track__content">
+              <h4 class="track__name">
+                Название трека
+              </h4>
+              <span class="track__author">
+                Мелодия баса
+              </span>
+            </div>
+            <a class="track__link" href="#">
+              <svg class="track__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12M16 6L12 2M12 2L8 6M12 2V15"
+                  stroke="#F3F3F3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="track__timer">0:00</div>
+          </div>
+        </li>
+        <li class="music__list-item">
+          <div class="track track--lock">
+            <div class="track__img-wrap">
+              <img class="track__img" src="img/track-img.jpg" width="80" height="80"
+                alt="Миниатюра обложки альбома Мелодия Баса">
+            </div>
+            <div class="track__content">
+              <h4 class="track__name">
+                Название трека
+              </h4>
+              <span class="track__author">
+                Мелодия баса
+              </span>
+            </div>
+            <a class="track__link" href="#">
+              <svg class="track__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12M16 6L12 2M12 2L8 6M12 2V15"
+                  stroke="#F3F3F3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="track__timer">0:00</div>
+          </div>
+        </li>
+        <li class="music__list-item">
+          <div class="track track--lock">
+            <div class="track__img-wrap">
+              <img class="track__img" src="img/track-img.jpg" width="80" height="80"
+                alt="Миниатюра обложки альбома Мелодия Баса">
+            </div>
+            <div class="track__content">
+              <h4 class="track__name">
+                Название трека
+              </h4>
+              <span class="track__author">
+                Мелодия баса
+              </span>
+            </div>
+            <a class="track__link" href="#">
+              <svg class="track__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12M16 6L12 2M12 2L8 6M12 2V15"
+                  stroke="#F3F3F3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="track__timer">0:00</div>
+          </div>
+        </li>
+        <li class="music__list-item">
+          <div class="track track--lock">
+            <div class="track__img-wrap">
+              <img class="track__img" src="img/track-img.jpg" width="80" height="80"
+                alt="Миниатюра обложки альбома Мелодия Баса">
+            </div>
+            <div class="track__content">
+              <h4 class="track__name">
+                Название трека
+              </h4>
+              <span class="track__author">
+                Мелодия баса
+              </span>
+            </div>
+            <a class="track__link" href="#">
+              <svg class="track__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12M16 6L12 2M12 2L8 6M12 2V15"
+                  stroke="#F3F3F3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="track__timer">0:00</div>
+          </div>
+        </li>
+        <li class="music__list-item">
+          <div class="track track--lock">
+            <div class="track__img-wrap">
+              <img class="track__img" src="img/track-img.jpg" width="80" height="80"
+                alt="Миниатюра обложки альбома Мелодия Баса">
+            </div>
+            <div class="track__content">
+              <h4 class="track__name">
+                Название трека
+              </h4>
+              <span class="track__author">
+                Мелодия баса
+              </span>
+            </div>
+            <a class="track__link" href="#">
+              <svg class="track__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12M16 6L12 2M12 2L8 6M12 2V15"
+                  stroke="#F3F3F3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="track__timer">0:00</div>
+          </div>
+        </li>
+        <li class="music__list-item">
+          <div class="track track--lock">
+            <div class="track__img-wrap">
+              <img class="track__img" src="img/track-img.jpg" width="80" height="80"
+                alt="Миниатюра обложки альбома Мелодия Баса">
+            </div>
+            <div class="track__content">
+              <h4 class="track__name">
+                Название трека
+              </h4>
+              <span class="track__author">
+                Мелодия баса
+              </span>
+            </div>
+            <a class="track__link" href="#">
+              <svg class="track__link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12M16 6L12 2M12 2L8 6M12 2V15"
+                  stroke="#F3F3F3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="track__timer">0:00</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+</section>
